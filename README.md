@@ -4,9 +4,7 @@ Welcome to the aranisec/security wiki!
 
 This is my security practice reference book created while preparing for PWK/OSCP certification.
 
-Thanks to [xapax](https://xapax.gitbooks.io/security/content/) for this wonderful book. I have forked this book from his git book and trying add more stuff.
-
-Any want to use and improve, you are free to fork it to make your own copy.
+Thanks to [xapax](https://xapax.gitbooks.io/security/content/) for this wonderful book. I have forked this book from his git book and trying to add more stuff.
 
 Also, this book is just a collection of stuff that is available on the interwebz. I am just a simple collector. I have tried to include a reference section to show where I found the technique. This book is my way of trying to give something back to the infosec community and I hope it can be useful to someone.
 
