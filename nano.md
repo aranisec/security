@@ -12,7 +12,7 @@ nano /path/to/filename - to edit a file
 
 nano +n /path/to/filename - to edit a file and place the cursor at the start of specific line \(n\)
 
-
+---
 
 #### Once into the text editor, the following commands/shortcuts:
 
@@ -22,7 +22,7 @@ Ctrl + X- To exit help
 
 Ctrl + C- To cancel a command
 
-
+---
 
 #### Text editing commands:
 
