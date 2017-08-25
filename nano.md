@@ -1,10 +1,10 @@
-**Nano**
+# **Nano**
 
 My favourite text editor in Kali Linux. Its an easy to use editor for all types files.
 
 
 
-The following are the common commands used for nano:
+#### The following are the common commands used for nano:
 
 nano - to start an empty editor
 
@@ -14,7 +14,7 @@ nano +n /path/to/filename - to edit a file and place the cursor at the start of 
 
 
 
-Once into the text editor, the following commands/shortcuts:
+#### Once into the text editor, the following commands/shortcuts:
 
 Ctrl + G- For help page
 
@@ -24,7 +24,7 @@ Ctrl + C- To cancel a command
 
 
 
-Text editing commands:
+#### Text editing commands:
 
 Ctrl + C- To cancel a command
 
