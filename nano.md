@@ -2,81 +2,6 @@
 
 My favourite text editor in Kali Linux. Its an easy to use editor for all types files.
 
-&lt;!--  
- /\* Font Definitions \*/  
- @font-face  
-	{font-family:"Cambria Math";  
-	panose-1:2 4 5 3 5 4 6 3 2 4;  
-	mso-font-charset:0;  
-	mso-generic-font-family:roman;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}  
-@font-face  
-	{font-family:Calibri;  
-	panose-1:2 15 5 2 2 2 4 3 2 4;  
-	mso-font-charset:0;  
-	mso-generic-font-family:swiss;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-520092929 1073786111 9 0 415 0;}  
- /\* Style Definitions \*/  
- p.MsoNormal, li.MsoNormal, div.MsoNormal  
-	{mso-style-unhide:no;  
-	mso-style-qformat:yes;  
-	mso-style-parent:"";  
-	margin-top:0cm;  
-	margin-right:0cm;  
-	margin-bottom:8.0pt;  
-	margin-left:0cm;  
-	line-height:107%;  
-	mso-pagination:widow-orphan;  
-	font-size:11.0pt;  
-	font-family:"Calibri",sans-serif;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:Calibri;  
-	mso-fareast-theme-font:minor-latin;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;  
-	mso-fareast-language:EN-US;}  
-p  
-	{mso-style-noshow:yes;  
-	mso-style-priority:99;  
-	mso-margin-top-alt:auto;  
-	margin-right:0cm;  
-	mso-margin-bottom-alt:auto;  
-	margin-left:0cm;  
-	mso-pagination:widow-orphan;  
-	font-size:12.0pt;  
-	font-family:"Times New Roman",serif;  
-	mso-fareast-font-family:"Times New Roman";}  
-.MsoChpDefault  
-	{mso-style-type:export-only;  
-	mso-default-props:yes;  
-	font-family:"Calibri",sans-serif;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:Calibri;  
-	mso-fareast-theme-font:minor-latin;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;  
-	mso-fareast-language:EN-US;}  
-.MsoPapDefault  
-	{mso-style-type:export-only;  
-	margin-bottom:8.0pt;  
-	line-height:107%;}  
-@page WordSection1  
-	{size:595.3pt 841.9pt;  
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;  
-	mso-header-margin:35.4pt;  
-	mso-footer-margin:35.4pt;  
-	mso-paper-source:0;}  
-div.WordSection1  
-	{page:WordSection1;}  
---&gt;  
 
 
 The following are the common commands used for nano:
@@ -122,6 +47,4 @@ Ctrl + P & Ctrl + N- To move up and down one line at a time
 Ctrl + Y- Previous page
 
 Ctrl + N- Next page
-
-
 
