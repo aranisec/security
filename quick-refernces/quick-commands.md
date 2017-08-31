@@ -30,7 +30,7 @@
 | netstat –nabo | Lists ports / connections with corresponding process \(-b\), don’t perform looking \(-n\), all connections \(-a\) and owning process ID \(-o\) |
 | netstat –r | Displays the routing table |
 |  |  |
-| `netstat -anob | findstr “services, process or port”` | The “b” flag makes the command take longer but will output the process name using each of the connections. |
+| netstat -anob \| findstr “services, process or port” | The “b” flag makes the command take longer but will output the process name using each of the connections. |
 | netsh diag show all | {**XP only**} Shows information on network services and adapters |
 | net view | Queries NBNS/SMB \(SAMBA\) and tries to find all hosts in your current workgroup or domain. |
 | net view /domain | List all domains available to the host |
