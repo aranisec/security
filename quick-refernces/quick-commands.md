@@ -3,7 +3,7 @@
 | **Command** | **Description** |
 | :--- | :--- |
 | nmap -T4 -A -Pn -oA scan -v 192.168.1.1-254 | Full scan |
-| for i in 21 22 23 80 443 445;do cat scan.gnmap\|grep " $i/open"\|cut -d "" -f2 &gt; $i.txt;done | Parse results into txt files per port |
+| `for i in 21 22 23 80 443 445; do cat scan.gnmap | grep " $i/open" | cut -d "" -f2 > $i.txt; done` | Parse results into txt files per port |
 | nmap -T4 -v -oA myshares --script smb-enum-shares --script-args smbuser=pwndizzle,smbpass=mypassword -p445 192.168.1.1-254 | Check for open shares |
 | dig axfr[example.com](http://example.com/)@[ns1.example.com](http://ns1.example.com/) | DNS zone transfer \(Linux\) |
 | tcp.port, tcp.srcport, ip.src, ip.dst, or, and | Wireshark syntax |
