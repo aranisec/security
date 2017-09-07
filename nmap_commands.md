@@ -1,7 +1,9 @@
 Nmap Commands:
 
 1. Scan a System with Hostname and IP Address
+
 [root@server1 ~]# nmap server2.tecmint.com
+
 [root@server1 ~]# nmap 192.168.0.101
 
 2. Scan using “-v” option
