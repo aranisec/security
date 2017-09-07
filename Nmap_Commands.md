@@ -1,21 +1,21 @@
 Nmap Commands:
 
 1. Scan a System with Hostname and IP Address
-# nmap server2.tecmint.com
-# nmap 192.168.0.101
+[root@server1 ~]# nmap server2.tecmint.com
+[root@server1 ~]# nmap 192.168.0.101
 
 2. Scan using “-v” option
 “-v” option gives more detailed information about the remote machine.
-# nmap -v server2.tecmint.com
+[root@server1 ~]# nmap -v server2.tecmint.com
 
 3. Scan Multiple Hosts
-# nmap 192.168.0.101 192.168.0.102 192.168.0.103
+[root@server1 ~]# nmap 192.168.0.101 192.168.0.102 192.168.0.103
 
 4. Scan a whole Subnet
-# nmap 192.168.0.*
+[root@server1 ~]# nmap 192.168.0.*
 
 5. Scan Multiple Servers using last octet of IP address
-# nmap 192.168.0.101,102,103
+[root@server1 ~]# nmap 192.168.0.101,102,103
 
 6. Scan list of Hosts from a File
 ----------------------------------
@@ -26,38 +26,38 @@ server2.tecmint.com
 192.168.0.101
 -------------------------------------
 
-# nmap -iL nmaptest.txt
+[root@server1 ~]# nmap -iL nmaptest.txt
 
 7. Scan an IP Address Range
-# nmap 192.168.0.101-110
+[root@server1 ~]# nmap 192.168.0.101-110
 
 8. Scan Network Excluding Remote Hosts
-# nmap 192.168.0.* --exclude 192.168.0.100
+[root@server1 ~]# nmap 192.168.0.* --exclude 192.168.0.100
 
 
 9. Scan OS information and Traceroute
-# nmap -A 192.168.0.101
+[root@server1 ~]# nmap -A 192.168.0.101
 
 10. Enable OS Detection with Nmap
 Use the option “-O” and “-osscan-guess” also helps to discover OS information
-# nmap -O server2.tecmint.com
+[root@server1 ~]# nmap -O server2.tecmint.com
 
 11. Scan a Host to Detect Firewall
 The below command will perform a scan on a remote host to detect if any packet filters or Firewall is used by host.
-# nmap -sA 192.168.0.101
+[root@server1 ~]# nmap -sA 192.168.0.101
 
 12. Scan a Host to check its protected by Firewall
 To scan a host if it is protected by any packet filtering software or Firewalls.
-# nmap -PN 192.168.0.101
+[root@server1 ~]# nmap -PN 192.168.0.101
 
 13. Find out Live hosts in a Network
 With the help of “-sP” option we can simply check which hosts are live and up in Network, with this option nmap skips port detection and other things.
-# nmap -sP 192.168.0.*
+[root@server1 ~]# nmap -sP 192.168.0.*
 
 
 14. Perform a Fast Scan
 You can perform a fast scan with “-F” option to scans for the ports listed in the nmap-services files and leaves all other ports.
-# nmap -F 192.168.0.101
+[root@server1 ~]# nmap -F 192.168.0.101
 
 15. Find Nmap version
 You can find out Nmap version you are running on your machine with “-V” option.
