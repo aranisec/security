@@ -23,8 +23,8 @@
   * [Nmap Commands](nmap_commands.md)
 * [Recon and Information Gathering Phase](scanning.md)
   * [Passive Information Gatherig](passive_information_gatherig.md)
-    * Identify IP-addresses and Subdomains
-      * Identify IP-addresses
+    * [Identify IP-addresses and Subdomains](identify_ips_and_subdomains.md)
+      * [Identify IP-addresses](identify_ips.md)
       * [Find Subdomains](find_subdomains.md)
         * [DNS Basics](dns_basics.md)
         * [Finding subdomains](finding_subdomains.md)
