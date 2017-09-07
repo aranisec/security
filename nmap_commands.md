@@ -18,15 +18,7 @@ Nmap Commands:
 [root@server1 ~]# nmap 192.168.0.101,102,103
 
 6. Scan list of Hosts from a File
-----------------------------------
-[root@server1 ~]# cat > nmaptest.txt
-
-localhost
-server2.tecmint.com
-192.168.0.101
--------------------------------------
-
-[root@server1 ~]# nmap -iL nmaptest.txt
+[root@server1 ~]# nmap -iL targets.txt
 
 7. Scan an IP Address Range
 [root@server1 ~]# nmap 192.168.0.101-110
