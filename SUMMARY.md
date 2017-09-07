@@ -44,7 +44,7 @@
     * [Attacking the System](lead_to_compromise.md)
       * [Local File Inclusion](local_file_inclusion.md)
       * [Remote File Inclusion](remote_file_inclusion.md)
-      * [Directory Traversal Attack](directory-traversal-attack.md)
+      * [Directory Traversal Attack](directory_traversal_attack.md)
       * [Hidden Files and Directories](web-scanning.md)
       * [SQL-Injections](sql-injections.md)
       * [Nosql-Injections](nosql-injections.md)
@@ -64,7 +64,6 @@
         * [Examples](examplesXSS.md)
         * [DOM-based XSS](dom-based-xss.md)
       * [Browser Vulnerabilities](browser_vulnerabilities.md)
-      * HTML-Injection
       * [Session Fixation](session-fixation.md)
   * [Automated Vulnerability Scanners](automated_vulnerability_scanners.md)
 * [Exploiting](exploiting.md)
