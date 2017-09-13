@@ -66,8 +66,11 @@ With the help of “-sP” option we can simply check which hosts are live and u
 You can perform a fast scan with “-F” option to scans for the ports listed in the nmap-services files and leaves all other ports.
 
 ```
+
 [root@server1 ~]# nmap -F 192.168.0.101
+
 ```
+
 15. Find Nmap version
 You can find out Nmap version you are running on your machine with “-V” option.
 ```
