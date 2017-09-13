@@ -64,6 +64,7 @@ With the help of “-sP” option we can simply check which hosts are live and u
 
 14. Perform a Fast Scan
 You can perform a fast scan with “-F” option to scans for the ports listed in the nmap-services files and leaves all other ports.
+
 ```
 [root@server1 ~]# nmap -F 192.168.0.101
 ```
@@ -157,4 +158,5 @@ Sometimes packet filtering firewalls blocks standard ICMP ping requests, in that
 [root@server1 ~]# nmap --top-ports 5 192.168.1.1
 
 [root@server1 ~]# nmap --top-ports 10 192.168.1.1
+
 ``` 
