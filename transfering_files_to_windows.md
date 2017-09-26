@@ -146,4 +146,4 @@ wine exe2bat.exe nc.exe nc.txt
 Now we just copy-past the text into our windows-shell. And it will automatically create a file called nc.exe
 
 
-### A very good resource on the same : https://blog.ropnop.com/transferring-files-from-kali-to-windows/
+A very good resource on the same : [https://blog.ropnop.com/transferring-files-from-kali-to-windows/](https://blog.ropnop.com/transferring-files-from-kali-to-windows/)
