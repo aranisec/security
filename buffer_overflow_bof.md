@@ -1,4 +1,4 @@
-# Buffer overflow (BOF)
+# Linux Buffer overflow (BOF)
 
 ##Methodology
 
@@ -41,3 +41,11 @@ end
 si ;steps one forward, but follows functions
 ni ;does not follow functions
 ```
+
+# Windows Buffer overflow (BOF)
+
+## Links
+
+1. Windows Exploit from scratch [https://www.nccgroup.trust/au/about-us/newsroom-and-events/blogs/2016/june/writing-exploits-for-win32-systems-from-scratch/]
+2. dostackbufferoverflowgood [https://github.com/justinsteven/dostackbufferoverflowgood]
+
