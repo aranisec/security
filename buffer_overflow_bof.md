@@ -48,4 +48,4 @@ ni ;does not follow functions
 
 1. Windows Exploit from scratch [https://www.nccgroup.trust/au/about-us/newsroom-and-events/blogs/2016/june/writing-exploits-for-win32-systems-from-scratch/]
 2. dostackbufferoverflowgood [https://github.com/justinsteven/dostackbufferoverflowgood]
-
+3. Buffer overflow practice [https://www.vortex.id.au/2017/05/pwkoscp-stack-buffer-overflow-practice/]
